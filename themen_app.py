@@ -24,7 +24,7 @@ st.set_page_config(page_title="Themenplattform", layout="centered")
 
 st.title("📝 Themenplattform für Klimaschutz-Netzwerke")
 
-query_params = st.experimental_get_query_params()
+query_params = st.query_params
 session_id = query_params.get("session", [None])[0]
 
 # Wenn keine Session-ID, dann Admin-Ansicht
